@@ -1,0 +1,86 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mazeHIT</title>
+    <meta name="description" content="mazeHIT ,משחק למדיה בסגנון מבוך המטרה לצאת מהמבוך על ידי זיהוי מתאים של פריטים לפי קרטריון נתון.  " />
+    <meta name="keywords" content="mazeHIT,HIT,GAME,MAZE,משחק, מבוך,למידה, זיהוי" />
+    <meta name="author" content="Korin Kashi & Eedn Barayev" />
+
+    <!-- CSS -->
+
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <!--jQuery library-->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <!--הקוד שמפעיל את תפריט הניווט-->
+    <script src="jScripts/myScript.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <!--קישור לדף עצמו כדי להתחיל את המשחק מחדש בלחיצה על הלוגו-->
+            <a href="indextest.html">
+                <img id="logo" src="images/logo.png" /> <!--הלוגו של המשחק שלכם-->
+                <p></p>
+            </a>
+            <!--תפריט הניווט בראש העמוד-->
+            <nav>
+                <ul>
+                    <li><a class="about">אודות</a></li>
+                    <li><a class="howToPlay">איך משחקים?</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="aboutDiv" class="popUp bounceInDown hide">
+            <a class="closeAbout">X</a>
+            <div>
+
+                <img id="logoHbut" src="images/logoAbuot2.png" />
+                
+                <p id="pAbuot">
+                    אפיון ופיתוח: עדן בראייב וקורין קאשי
+                </p>
+
+                <p>
+                    פותח במסגרת פרויקט בקורסים:<br />
+                    סביבות לימוד אינטראקטיביות 1 & אנימציה, תשע"ט
+                </p>
+
+                <img id="logoHITHbut" src="images/HITlogo.jpg" />
+
+                <p>
+                    <a href="http://md.hit.ac.il/">הפקולטה לטכנולוגיות למידהמכון טכנולוגי חולון</a>
+
+                </p>
+
+                <img id="PansHbuot" src="images/pans.png" />
+            </div>
+        </div>
+        <div id="howToPlayDiv" class="popUp bounceInDown hide">
+            <a class="closeHowToPlay">X</a>
+            <p id="howToPlayClick">
+                איך משחקים:<br />
+                עזרו לחייל לצאת מהמבוך!<br />
+                יש לזוז בעזרת מקשי המקלדת .
+                <br />
+                ניתן לעבור רק דרך המשבצות המכילות תוכן המתאים להוראת המשחק מעל המבוך.
+                המטרה של המשחק היא להגיע עם החייל עד סוף המבוך (החץ השחור בתחתית השמאלית של המבוך)
+                . ניתן להגדיל תמונה ע"י לחיצה עלייה<br />
+                בהצלחה!
+            </p>
+        </div>
+
+        <div id="gameArea" class="">
+            <!--src = הקישור של דף המשחק שלכם (לא קובץ האנימייט)-->
+            <iframe id="gameIframe" src="mazeHIT.html" frameBorder="0" allowfullscreen="">Browser not compatible.</iframe>
+        </div>
+    </div>
+</body>
+
+</html>
