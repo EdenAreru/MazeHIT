@@ -1770,8 +1770,8 @@ p.nominalBounds = new cjs.Rectangle(-1266.3,-596.8,1756.8,1037.4);
 		
 		function init() { //טעינת קבצי הסאונד
 			//לטעון את הסאונד - נתיב + שם
-			createjs.Sound.registerSound("MazeHIT/sounds/negative.wav", "NO");
-			createjs.Sound.registerSound("MazeHIT/sounds/positive.wav", "YES");
+			createjs.Sound.registerSound("/sounds/negative.wav", "NO");
+			createjs.Sound.registerSound("/sounds/positive.wav", "YES");
 		}
 		
 		function startMenu() { //פונקציה האחראית על פתיחת המסך הראשי של המשחק
